@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador Simple de Smartphones</title>
+</head>
+<body>
+
+<h2>Buscador de Smartphones</h2>
+
+<label>Marca:</label>
+<input list="marcas" id="marca">
+<datalist id="marcas">
+    <option value="Apple">
+    <option value="Samsung">
+    <option value="Xiaomi">
+    <option value="Realme">
+    <option value="Google">
+</datalist>
+
+<br><br>
+
+<label>Rango de precio:</label>
+<select id="precio">
+    <option value="0-200">0 - 200€</option>
+    <option value="200-500">200 - 500€</option>
+    <option value="500-1000">500 - 1000€</option>
+</select>
+
+<br><br>
+
+<button onclick="buscar()">Buscar</button>
+
+<h3>Resultados:</h3>
+<div id="resultados"></div>
+
+<script>
+    const datos = [
+        {marca: "Apple", modelo: "iPhone 12", precio: 799},
+        {marca: "Samsung", modelo: "Galaxy A52", precio: 349},
+        {marca: "Xiaomi", modelo: "Redmi Note 11", precio: 199},
+        {marca: "Realme", modelo: "Realme 8", precio: 179},
+        {marca: "Google", modelo: "Pixel 6", precio: 649}
+    ];
+</script>
+
+</body>
+</html>
