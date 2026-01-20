@@ -1,0 +1,43 @@
+.groc {
+    color: yellow;
+}
+ 
+.negrita {
+    color: black;
+}
+
+.fondoazul {
+    background-color: blue;
+    color: blanchedalmond;
+}
+
+.fondoverde {
+    background-color: greenyellow;
+    color: blanchedalmond;
+}
+
+.morado {
+    color: blueviolet;
+}
+
+.todonegro {
+    background-color: black;
+    color: black;
+}
+
+.rojo {
+    color: red;
+}
+
+.rojoblanco {
+    color: blanchedalmond;
+    background-color: red;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.opacidad {
+    opacity: 0.5;
+}
