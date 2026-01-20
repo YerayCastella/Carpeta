@@ -1,0 +1,12 @@
+img {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 50%; 
+}
+
+.nombres {
+    color: blue;
+    font-size: 2rem;
+}

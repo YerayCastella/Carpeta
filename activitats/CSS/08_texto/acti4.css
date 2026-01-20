@@ -1,0 +1,17 @@
+@font-face {
+    font-family: riot;
+    src: url(fonts/Riot\ block.otf);
+}
+
+@font-face {
+    font-family: sky;
+    src: url(fonts/Skynight.otf)
+}
+
+.p2 {
+    font-family: sky;
+}
+
+.p1 {
+    font-family: riot;
+}

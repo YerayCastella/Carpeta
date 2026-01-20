@@ -1,0 +1,42 @@
+.mobydick {
+ font-weight: 900;
+   font-style: normal;
+   font-size: 2.5rem;
+   letter-spacing: 1.2rem;
+}
+
+.magiamoby:hover {
+    color: blue;
+      font-family: cursive;
+}
+
+.magiaprologo:hover {
+   font-weight: 900;
+   color: red;
+}
+
+.hermanmelville {
+   font-weight: 300;
+    font-size: 0.75rem;
+     font-style: italic;
+      word-spacing: 1.2rem;
+}
+
+.porlogo {
+   font-weight: 300;
+    font-size: 0.75rem;
+     font-style: italic;
+       text-transform: uppercase;
+}
+
+.texto1 {
+   font-style: normal;
+    font-size: 1rem;
+     text-align: justify;
+}
+
+.texto2 {
+    font-size: 1rem;
+     text-align: justify;
+       font-style: normal;
+}
