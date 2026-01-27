@@ -1,0 +1,81 @@
+p {
+     position: absolute;
+}
+
+
+.margen1 {
+    text-align: center;
+}
+
+
+
+
+
+
+img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            height: 65vh;
+        }
+
+
+        .boton_elegante1 {
+  background-color: #d14646;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+
+        .boton_elegante2 {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 30px;
+}
+
+
+ .h1 {
+            color: white;
+            position: absolute;
+            bottom: 85%;
+            left: 32%;
+            text-align: center;
+        }
+
+.p1 {
+    color: white;
+            position: absolute;
+            bottom: 75%;
+            left: 32%;
+            text-align: center;
+}
+
+.boton1 {
+     position: absolute;
+            bottom: 70%;
+            left: 44%;
+            text-align: center;
+}
+
+.h2 {
+    left: 38%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+     bottom: 24%;
+}
+
+.p2 {
+     color: rgb(0, 0, 0);
+            position: absolute;
+            bottom: 16%;
+            left: 32%;
+            text-align: center;
+}
+
+.boton2 {
+     position: absolute;
+            bottom: 8%;
+            left: 44%;
+            text-align: center;
+}

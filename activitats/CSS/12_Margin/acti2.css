@@ -1,0 +1,19 @@
+.boton_elegante {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 30px;
+}
+
+.margen1 {
+    text-align: center;
+    margin-left: 4rem;
+    background-color:rgb(150, 168, 170)
+}
+
+.subrallado {
+   text-decoration: underline;  
+}
+
+.margen2 {
+    margin-left: 4rem;
+}
