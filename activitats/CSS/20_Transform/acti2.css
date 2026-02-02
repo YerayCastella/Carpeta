@@ -1,0 +1,14 @@
+.nose {
+  width: 150px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+.nose:hover {
+  transform: scale(2);
+}
