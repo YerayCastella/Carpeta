@@ -1,0 +1,10 @@
+.titulo1 {
+    position: absolute;
+    left: 5%;
+    right: 45%;
+}
+
+p {
+    color: rgba(32, 32, 32, 0.438);
+    font-size: 20px;
+}
