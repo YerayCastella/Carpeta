@@ -1,0 +1,14 @@
+button {
+    background-color: rgb(230, 150, 46);
+}
+
+.boton :hover {
+ filter: grayscale(100%);
+}
+
+input:focus {
+transition-duration: 2s;
+border-color: transparent;
+transform: scale(1.25);
+outline: none;
+}
