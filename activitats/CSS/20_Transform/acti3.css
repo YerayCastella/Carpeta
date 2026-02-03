@@ -1,0 +1,27 @@
+
+.circulo2:hover {
+    transform: translateX(-192px);
+}
+
+.circulo1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    left: 20;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.circulo2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(68, 171, 212);
+    left: 20;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    filter: opacity(50%);
+}
