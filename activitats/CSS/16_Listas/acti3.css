@@ -1,0 +1,13 @@
+li {
+    box-sizing: border-box;
+    width: 12rem;
+    padding: 1rem;
+    border: 0.2rem solid black;
+    background-color: rgb(51, 115, 158);
+    color: white;
+    text-align: center;
+}
+
+.li :hover {
+      filter: grayscale(100%);
+}
