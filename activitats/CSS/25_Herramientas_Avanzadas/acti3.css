@@ -1,6 +1,6 @@
 @keyframes aparecer {
-    from {top: -300px; opacity: 0;}
-    to {top: 0; opacity: 1;}
+    from {top: 100px; opacity: 0;}
+    to {top: 100; opacity: 1;}
 }
 
 .textocookies {
@@ -8,6 +8,7 @@
     top: 200px;
     left: 200px;
     animation-name: aparecer;
-    animation-duration: 0.4s;
+    animation-duration: 4s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
