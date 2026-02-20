@@ -32,7 +32,7 @@ header {
 }
 
 .menu a {
-    color: var(--text);
+    color: var(--texto);
     text-decoration: none;
     font-weight: bold;
 }
@@ -83,4 +83,10 @@ footer {
 
 li {
     text-align: left;
+}
+
+.img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
