@@ -40,7 +40,7 @@ header {
 
 
 
-.hero {
+.fondo {
     min-height: 80vh;
     display: flex;
     flex-direction: column;
@@ -89,4 +89,26 @@ li {
     position: absolute;
     top: 20px;
     left: 20px;
+}
+
+.div {  
+min-height: 50px;
+max-width: 900px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    grid-auto-flow: dense;
+    margin-left: 10%;
+}   
+
+h2 {
+    margin-top: 40px;
+    margin-left: 8%;
+}
+
+.h1 {
+    margin-left: 6%;
 }
