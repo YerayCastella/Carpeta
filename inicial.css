@@ -128,3 +128,8 @@ max-width: 900px;
     color: var(--texto);
     text-align: left;
 }
+
+input:hover {
+    transition-duration: 2s;
+     transform: scale(1.4);
+}
