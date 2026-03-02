@@ -113,3 +113,13 @@ max-width: 900px;
     margin-left: 6%;
 }
 
+.fondo1 {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    min-width: 80hv;
+}
