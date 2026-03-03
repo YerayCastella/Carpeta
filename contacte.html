@@ -17,35 +17,44 @@
         <a href="contacte.html">Contacte</a>
     </nav>
 </header>
+    </div>
+  <form class="card">
 
-<span class="fondo">
+<form class="formulario">
+  <h2>Contacte</h2>
 
+  <div class="campos">
 
-<h1 class="h1">Contacte</h1>
-</br>
-
-<div class="div">
-
-<label>Nom: 
-<input type="Nom" name="Nom" value="" />
-</label>
-
-</br>
-
-<label>Correu electronic: 
-<input type="Correu electronic" name="Correu electronic" value="" />
-</label>
-
-
-</br>
-
-<label>Telefon:
-<input type="Telefon" name="Telefon" value="" />
-</label>
-
+    <div class="campo">
+      <label>Nom</label>
+      <input type="text" name="nom" required>
     </div>
 
+    <div class="campo">
+      <label>Cognom</label>
+      <input type="text" name="cognom" required>
+    </div>
 
+    <div class="campo">
+      <label>Correu electrònic</label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div class="campo">
+      <label>Telèfon</label>
+      <input type="text" name="telefon">
+    </div>
+
+    <div class="campo campo-grande">
+      <label>Missatge</label>
+      <textarea name="missatge"></textarea>
+    </div>
+
+    <div class="campo campo-grande">
+      <input type="submit" value="Enviar" class="boton-enviar">
+    </div>
+
+  </div>
     </main>
 </span>
 <footer>
