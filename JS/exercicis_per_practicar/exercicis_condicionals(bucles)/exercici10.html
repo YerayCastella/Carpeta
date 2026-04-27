@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nose</title>
+</head>
+<body>
+
+<h1>Introdueix un número</h1>
+
+<input type="text" id="numero"><br><br>
+<button onclick="comprovar()">Comprovar</button>
+
+<div id="res"></div>
+
+<script>
+
+function comprovar() {
+    let numero = Number(document.getElementById("numero").value);
+    let res = document.getElementById("res");
+    let esPrimer = true;
+
+    if (numero <= 1) {
+        esPrimer = false;
+    } else {
+        for (let i = 2; i < numero; i++) {
+            if (numero % i == 0) {
+                esPrimer = false;
+            }
+        }
+    }
+
+    if (esPrimer) {
+        res.textContent = "És primer";
+    } else {
+        res.textContent = "No és primer";
+    }
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Contrasenya</title>
+</head>
+<body>
+
+<h1>Comprovar contrasenya</h1>
+
+<input type="text" id="correcto"><br><br>
+<button onclick="comprovar()">Comprovar</button>
+
+<div id="nose"></div>
+
+<script>
+function comprovar() {
+    let correcta = "123456";
+    let usuari = document.getElementById("correcto").value;
+
+    if (usuari.toLowerCase() == correcta.toLowerCase()) {
+        nose.textContent = "Correcta";
+    } else {
+        nose.textContent = "Incorrecta";
+    }
+}
+</script>
+
+</body>
+</html>

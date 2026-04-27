@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Escriu una paraula i aparecera 10 vegades</h1>
+
+<input type="text" id="paraula"><br><br>
+<button onclick="comprovar()">Comprovar</button>
+
+<div id="res"></div>
+<script>
+function comprovar() {
+    let paraula = document.getElementById("paraula").value;
+    let resultat = "";
+
+    for (let i = 0; i < 10; i++) {
+        resultat += paraula + " ";
+    }
+
+    res.textContent = resultat;
+}
+</script>
+
+</body>
+</html>

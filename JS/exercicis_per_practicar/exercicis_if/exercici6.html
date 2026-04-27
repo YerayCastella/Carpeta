@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Grup A o B</title>
+</head>
+<body>
+
+<h1>Assignació de grup</h1>
+
+<input type="text" id="nom" placeholder="Nom"><br><br>
+<input type="text" id="sexe" placeholder="home/dona"><br><br>
+
+<button onclick="assignar()">Assignar</button>
+
+<div id="res"></div>
+
+<script>
+function assignar() {
+    let nom = document.getElementById("nom").value.toUpperCase();
+    let sexe = document.getElementById("sexe").value.toLowerCase();
+
+    if ((sexe == "dona" && nom < "M") || (sexe == "home" && nom > "N")) {
+        res.textContent = "Grup A";
+    } else {
+        res.textContent = "Grup B";
+    }
+}
+</script>
+
+</body>
+</html>

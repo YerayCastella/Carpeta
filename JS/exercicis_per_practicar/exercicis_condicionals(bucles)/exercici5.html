@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nose</title>
+</head>
+<body>
+
+<h1>Calcula la inversió</h1>
+
+<input type="text" id="1" placeholder="Capital inicial"><br><br>
+<input type="text" id="2" placeholder="Interès anual"><br><br>
+<input type="text" id="3" placeholder="Anys"><br><br>
+
+<button onclick="calcular()">Calcular</button>
+
+<div id="res"></div>
+
+<script>
+
+function calcular() {
+    let capital = Number(document.getElementById("1").value);
+    let interes = Number(document.getElementById("2").value);
+    let anys = Number(document.getElementById("3").value);
+    let res = document.getElementById("res");
+    let resultat = "";
+
+    for (let i = 1; i <= anys; i++) {
+        capital = capital + (capital * interes / 100);
+        resultat += "Any " + i + ": " + capital.toFixed(2) + "<br>";
+    }
+
+    res.innerHTML = resultat;
+}
+
+</script>
+
+</body>
+</html>

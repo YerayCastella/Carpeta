@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Parell o senar</title>
+</head>
+<body>
+
+<h1>Parell o senar</h1>
+
+<input type="text" id="num"><br><br>
+<button onclick="comprovar()">Comprovar</button>
+
+<div id="res"></div>
+
+<script>
+function comprovar() {
+    let num = document.getElementById("num").value;
+
+    if (num % 2 == 0) {
+        res.textContent = "Parell";
+    } else {
+        res.textContent = "Senar";
+    }
+}
+</script>
+
+</body>
+</html>
