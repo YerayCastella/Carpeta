@@ -7,6 +7,7 @@
       <style>
     canvas { border: 2px solid #333; }
   </style>
+      <link rel="stylesheet" type="text/css" href="acti1.css">
 </head>
 <body>
 
@@ -15,6 +16,9 @@
 
 
 <script class="canvas">
+  
+
+
   let canvas = document.getElementById("miCanvas");
   let ctx = canvas.getContext("2d");
 
@@ -26,7 +30,26 @@ let posPuerta = 480;
 let posVentana1 = 430;
 let posVentana2 = 550;
 let posVentana3 = 515;
+  let x = 50;
+  let y = 100;
+  let velocitat = 5;
+  let radi = 20;
 
+  let dreta = false;
+  let esquerra = false;
+
+
+    document.addEventListener("keydown", function(e) {
+    if(e.key === "ArrowRight") dreta = true;
+    if(e.key === "ArrowLeft") esquerra = true;
+    });
+
+        document.addEventListener("keyup", function(e) {
+    if(e.key === "ArrowRight") dreta = false;
+    if(e.key === "ArrowLeft") esquerra = false;
+    });
+
+function todo()  {
 
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 ctx.fillStyle = "#337cb8";
@@ -42,6 +65,7 @@ ctx.ellipse(500, 470, 250, 70, 0, 0, Math.PI * 2);
 ctx.fillStyle = "#cca72f";
 ctx.fill();
 ctx.stroke();
+ctx.closePath();
 
 ctx.fillStyle = "brown";
 ctx.fillRect(posArbolX, 360, 20, 100);
@@ -52,6 +76,7 @@ ctx.arc(posHojaX, 340, 70, Math.PI, 0);
 ctx.fillStyle = "green";
 ctx.fill();
 ctx.stroke();
+ctx.closePath();
 
 ctx.fillStyle = "pink";
 ctx.fillRect(posCasaX, 300, 230, 200);
@@ -93,6 +118,31 @@ ctx.fillText("KAME",480,360);
 ctx.font = "20px Arial";
 ctx.fillStyle = "white";
 ctx.fillText("HOUSE",470,380);
+
+}
+
+ function dibuixarPilota() {
+    ctx.beginPath();
+    ctx.arc(x, y, radi, 0, Math.PI * 2);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.closePath();
+  }
+
+
+  function actualitzar() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    todo();
+    dibuixarPilota();
+
+    if(dreta && x < canvas.width - radi) x += velocitat;
+    if(esquerra && x > radi) x -= velocitat;
+
+    requestAnimationFrame(actualitzar);
+  }
+
+  actualitzar();
 
 </script>
 </body>
