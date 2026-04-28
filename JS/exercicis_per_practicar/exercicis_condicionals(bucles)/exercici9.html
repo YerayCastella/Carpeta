@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nose</title>
+</head>
+<body>
+
+<h1>Introdueix la contrasenya</h1>
+
+<input type="text" id="pass"><br><br>
+<button onclick="comprovar()">Comprovar</button>
+
+<div id="res"></div>
+
+<script>
+
+let contrasenya = "1234";
+
+function comprovar() {
+    let pass = document.getElementById("pass").value;
+    let res = document.getElementById("res");
+
+    if (pass == contrasenya) {
+        res.textContent = "Correcte";
+    } else {
+        res.textContent = "Incorrecte, torna-ho a intentar";
+    }
+}
+
+</script>
+
+</body>
+</html>

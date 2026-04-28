@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nose</title>
+</head>
+<body>
+
+<h1>Introdueix un número</h1>
+
+<input type="text" id="numero"><br><br>
+<button onclick="dibuixar()">Dibuixar</button>
+
+<div id="res"></div>
+
+<script>
+
+function dibuixar() {
+    let numero = Number(document.getElementById("numero").value);
+    let res = document.getElementById("res");
+    let resultat = "";
+
+    for (let i = 1; i <= numero; i++) {
+        let valor = 2 * i - 1;
+
+        for (let j = i; j >= 1; j--) {
+            resultat += valor + " ";
+            valor -= 2;
+        }
+
+        resultat += "<br>";
+    }
+
+    res.innerHTML = resultat;
+}
+
+</script>
+
+</body>
+</html>

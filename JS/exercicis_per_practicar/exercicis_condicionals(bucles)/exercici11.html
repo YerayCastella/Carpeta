@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nose</title>
+</head>
+<body>
+
+<h1>Introdueix una paraula</h1>
+
+<input type="text" id="paraula"><br><br>
+<button onclick="mostrar()">Mostrar</button>
+
+<div id="res"></div>
+
+<script>
+
+function mostrar() {
+    let paraula = document.getElementById("paraula").value;
+    let res = document.getElementById("res");
+    let resultat = "";
+
+    for (let i = paraula.length - 1; i >= 0; i--) {
+        resultat += paraula[i] + "<br>";
+    }
+
+    res.innerHTML = resultat;
+}
+
+</script>
+
+</body>
+</html>

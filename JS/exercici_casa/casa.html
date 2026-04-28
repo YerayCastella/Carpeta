@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+    canvas { border: 2px solid #333; }
+  </style>
+</head>
+<body>
+
+
+        <canvas id="miCanvas" width="1000" height="600" style="border: 1px solid black;"></canvas>
+
+
+<script class="canvas">
+  let canvas = document.getElementById("miCanvas");
+  let ctx = canvas.getContext("2d");
+
+let posicioX = 0;
+let posArbolX = 300;
+let posHojaX = 310;
+let posCasaX = 400;
+let posPuerta = 480;
+let posVentana1 = 430;
+let posVentana2 = 550;
+let posVentana3 = 515;
+
+
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "#337cb8";
+ctx.fillRect(posicioX, 420, 1000, 200);
+ctx.stroke();
+
+ctx.fillStyle = "lightblue";
+ctx.fillRect(posicioX, 0, 1000, 450);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.ellipse(500, 470, 250, 70, 0, 0, Math.PI * 2);
+ctx.fillStyle = "#cca72f";
+ctx.fill();
+ctx.stroke();
+
+ctx.fillStyle = "brown";
+ctx.fillRect(posArbolX, 360, 20, 100);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(posHojaX, 340, 70, Math.PI, 0);
+ctx.fillStyle = "green";
+ctx.fill();
+ctx.stroke();
+
+ctx.fillStyle = "pink";
+ctx.fillRect(posCasaX, 300, 230, 200);
+ctx.stroke();
+
+ctx.fillStyle = "brown";
+ctx.fillRect(posPuerta, 400, 60, 100);
+ctx.stroke();
+
+ctx.fillStyle = "lightblue";
+ctx.fillRect(posVentana1, 370, 40, 40);
+ctx.stroke();
+
+ctx.fillStyle = "lightblue";
+ctx.fillRect(posVentana2, 370, 40, 40);
+ctx.stroke();
+
+ctx.fillStyle = "red";
+ctx.beginPath();
+ctx.moveTo(520,200);
+ctx.lineTo(670,330);
+ctx.lineTo(370,330);
+ctx.lineTo(520,200);
+ctx.closePath();
+ctx.fill();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(posVentana3, 290, 30, Math.PI * 2, 0);
+ctx.fillStyle = "lightblue";
+ctx.fill();
+ctx.stroke();
+
+
+ctx.font = "20px Arial";
+ctx.fillStyle = "white";
+ctx.fillText("KAME",480,360);
+
+ctx.font = "20px Arial";
+ctx.fillStyle = "white";
+ctx.fillText("HOUSE",470,380);
+
+</script>
+</body>
+</html>

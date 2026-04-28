@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Rendiment</title>
+</head>
+<body>
+
+<h1>Rendiment laboral</h1>
+
+<input type="text" id="punt"><br><br>
+
+<button onclick="calcular()">Comprovar</button>
+
+<div id="res"></div>
+
+<script>
+function calcular() {
+    let p = document.getElementById("punt").value;
+    let bonus = p * 2400;
+
+    if (p == 0.0) {
+        res.textContent = "Inacceptable - " + bonus + "€";
+    } else if (p == 0.4) {
+        res.textContent = "Acceptable - " + bonus + "€";
+    } else if (p >= 0.6) {
+        res.textContent = "Meritòri - " + bonus + "€";
+    } else {
+        res.textContent = "Valor no vàlid";
+    }
+}
+</script>
+
+</body>
+</html>

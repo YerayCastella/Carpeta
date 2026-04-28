@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Pas 1 - Canvas</title>
+  <style>
+    canvas { border: 2px solid #333; }
+  </style>
+</head>
+<body>
+
+<canvas id="miCanvas" width="500" height="300" style="border: 1px solid black;"></canvas>
+
+<script>
+  let canvas = document.getElementById("miCanvas");
+  let ctx = canvas.getContext("2d");
+
+  // Definir color blau
+  ctx.fillStyle = "blue";
+  // Dibuixar rectangle (x=50, y=50, amplada=150, alçada=100)
+  ctx.fillRect(10, 10, 150, 100);
+
+  // Definir color vermell semitransparent
+  ctx.fillStyle = "rgba(255, 0, 0, 1)";
+  ctx.fillRect(150, 150, 100, 100);
+</script>
+
+</body>
+</html>

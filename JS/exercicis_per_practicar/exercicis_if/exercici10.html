@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Pizzeria</title>
+</head>
+<body>
+
+<h1>Pizzeria</h1>
+
+<input type="text" id="tipus" placeholder="vegetariana/no"><br><br>
+<input type="text" id="ingredient" placeholder="ingredient"><br><br>
+
+<button onclick="ferPizza()">Confirmar</button>
+
+<div id="res"></div>
+
+<script>
+function ferPizza() {
+    let tipus = document.getElementById("tipus").value.toLowerCase();
+    let ing = document.getElementById("ingredient").value;
+
+    if (tipus == "vegetariana") {
+        res.textContent = "Pizza vegetariana amb tomàquet, mozzarella i " + ing;
+    } else {
+        res.textContent = "Pizza no vegetariana amb tomàquet, mozzarella i " + ing;
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nose</title>
+</head>
+<body>
+
+<h1>Comptar lletres</h1>
+
+<input type="text" id="frase" placeholder="Frase"><br><br>
+<input type="text" id="lletra" placeholder="Lletra"><br><br>
+
+<button onclick="comptar()">Comptar</button>
+
+<div id="res"></div>
+
+<script>
+
+function comptar() {
+    let frase = document.getElementById("frase").value;
+    let lletra = document.getElementById("lletra").value;
+    let res = document.getElementById("res");
+    let comptador = 0;
+
+    for (let i = 0; i < frase.length; i++) {
+        if (frase[i] == lletra) {
+            comptador++;
+        }
+    }
+
+    res.textContent = "Apareix " + comptador + " vegades";
+}
+
+</script>
+
+</body>
+</html>

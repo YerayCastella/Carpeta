@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nose</title>
+</head>
+<body>
+
+<h1>Taules de multiplicar</h1>
+
+<button onclick="mostrar()">Mostrar</button>
+
+<div id="res"></div>
+
+<script>
+
+function mostrar() {
+    let res = document.getElementById("res");
+    let resultat = "";
+
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 10; j++) {
+            resultat += i + " x " + j + " = " + (i * j) + "<br>";
+        }
+        resultat += "<br>";
+    }
+
+    res.innerHTML = resultat;
+}
+
+</script>
+
+</body>
+</html>

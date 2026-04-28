@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Tipus impositiu</title>
+</head>
+<body>
+
+<h1>Tipus impositiu</h1>
+
+<input type="text" id="renda" placeholder="Renda anual"><br><br>
+
+<button onclick="calcular()">Calcular</button>
+
+<div id="res"></div>
+
+<script>
+function calcular() {
+    let renda = document.getElementById("renda").value;
+
+    if (renda < 10000) {
+        res.textContent = "5%";
+    } else if (renda < 20000) {
+        res.textContent = "15%";
+    } else if (renda < 35000) {
+        res.textContent = "20%";
+    } else if (renda < 60000) {
+        res.textContent = "30%";
+    } else {
+        res.textContent = "45%";
+    }
+}
+</script>
+
+</body>
+</html>
